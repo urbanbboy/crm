@@ -61,7 +61,7 @@ export function AppearanceForm() {
           name='font'
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Font</FormLabel>
+              <FormLabel>Шрифт</FormLabel>
               <div className='relative w-max'>
                 <FormControl>
                   <select
@@ -81,7 +81,7 @@ export function AppearanceForm() {
                 <ChevronDownIcon className='absolute top-2.5 right-3 h-4 w-4 opacity-50' />
               </div>
               <FormDescription className='font-manrope'>
-                Set the font you want to use in the dashboard.
+                Установите шрифт, который вы хотите видеть на панели инструментов.
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -92,9 +92,9 @@ export function AppearanceForm() {
           name='theme'
           render={({ field }) => (
             <FormItem className='space-y-1'>
-              <FormLabel>Theme</FormLabel>
+              <FormLabel>Тема</FormLabel>
               <FormDescription>
-                Select the theme for the dashboard.
+                Выберите тему для панели управления.
               </FormDescription>
               <FormMessage />
               <RadioGroup
@@ -124,11 +124,11 @@ export function AppearanceForm() {
                       </div>
                     </div>
                     <span className='block w-full p-2 text-center font-normal'>
-                      Light
+                      Светлая
                     </span>
                   </FormLabel>
                 </FormItem>
-                <FormItem>
+                <FormItem className='ml-3'>
                   <FormLabel className='[&:has([data-state=checked])>div]:border-primary'>
                     <FormControl>
                       <RadioGroupItem value='dark' className='sr-only' />
@@ -150,7 +150,7 @@ export function AppearanceForm() {
                       </div>
                     </div>
                     <span className='block w-full p-2 text-center font-normal'>
-                      Dark
+                      Темная
                     </span>
                   </FormLabel>
                 </FormItem>

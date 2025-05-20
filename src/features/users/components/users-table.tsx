@@ -120,7 +120,7 @@ export function UsersTable({ columns, data }: DataTableProps) {
                   colSpan={columns.length}
                   className='h-24 text-center'
                 >
-                  No results.
+                  Не найдено.
                 </TableCell>
               </TableRow>
             )}

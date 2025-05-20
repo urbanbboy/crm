@@ -28,9 +28,9 @@ export default function Users() {
       <Main>
         <div className='mb-2 flex flex-wrap items-center justify-between space-y-2'>
           <div>
-            <h2 className='text-2xl font-bold tracking-tight'>User List</h2>
+            <h2 className='text-2xl font-bold tracking-tight'>Пациенты</h2>
             <p className='text-muted-foreground'>
-              Manage your users and their roles here.
+              Управляйте своими пациентами и их данными здесь.
             </p>
           </div>
           <UsersPrimaryButtons />

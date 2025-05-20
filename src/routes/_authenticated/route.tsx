@@ -4,7 +4,6 @@ import { cn } from '@/lib/utils'
 import { SearchProvider } from '@/context/search-context'
 import { SidebarProvider } from '@/components/ui/sidebar'
 import { AppSidebar } from '@/components/layout/app-sidebar'
-import SkipToMain from '@/components/skip-to-main'
 
 export const Route = createFileRoute('/_authenticated')({
   component: RouteComponent,
@@ -15,7 +14,6 @@ function RouteComponent() {
   return (
     <SearchProvider>
       <SidebarProvider defaultOpen={defaultOpen}>
-        <SkipToMain />
         <AppSidebar />
         <div
           id='content'

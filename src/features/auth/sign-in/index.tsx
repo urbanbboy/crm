@@ -14,30 +14,30 @@ export default function SignIn() {
     <AuthLayout>
       <Card className='gap-4'>
         <CardHeader>
-          <CardTitle className='text-lg tracking-tight'>Login</CardTitle>
+          <CardTitle className='text-xl tracking-tight'>Логин</CardTitle>
           <CardDescription>
-            Enter your email and password below to <br />
-            log into your account
+            Введите свой логин и пароль ниже для <br />
+            входа в учетную запись
           </CardDescription>
         </CardHeader>
         <CardContent>
           <UserAuthForm />
         </CardContent>
-        <CardFooter>
+        <CardFooter className='px-0'>
           <p className='text-muted-foreground px-8 text-center text-sm'>
-            By clicking login, you agree to our{' '}
+            Нажимая «Войти», вы соглашаетесь с нашими{' '}
             <a
               href='/terms'
               className='hover:text-primary underline underline-offset-4'
             >
-              Terms of Service
+              Условиями обслуживания
             </a>{' '}
-            and{' '}
+            и{' '}
             <a
               href='/privacy'
               className='hover:text-primary underline underline-offset-4'
             >
-              Privacy Policy
+              Политикой конфиденциальности
             </a>
             .
           </p>
